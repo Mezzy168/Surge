@@ -328,7 +328,7 @@ host-keyword,ttcdn-tos.kkimg.cc, direct
 ^https:\/\/mapi\.mafengwo\.cn\/ad\/get_launch_ad_list\/v url reject-200
 
 # > 高德地图更新弹窗
-^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/app\/startup\/init\? url reject-dict
+#^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/app\/startup\/init\? url reject-dict
 
 #> 航旅纵横  主机名discardrp.umetrip.com
 ^https?:\/\/discardrp\.umetrip\.com\/gateway\/api\/umetrip\/native url reject-200
