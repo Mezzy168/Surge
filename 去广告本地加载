@@ -13,7 +13,7 @@ hostname=lban.spdb.com.cn, wap.spdb.com,cdn.cmgadx.com,creditcardapp.bankcomm.cn
 
 
 
-# > 深圳通微信小程序去广告
+# 深圳通微信小程序去广告
 HOST-SUFFIX,wxsnsdythumb.wxs.qq.com, reject
 #广州地铁乘车码 #多个广告 感谢CtrlMusic🐓分享
 host, apis.alenable.com, reject
