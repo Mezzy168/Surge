@@ -13,7 +13,7 @@ hostname=lban.spdb.com.cn, wap.spdb.com,cdn.cmgadx.com,creditcardapp.bankcomm.cn
 
 
 
-# 深圳通微信小程序去广告
+# > 深圳通微信小程序去广告
 HOST-SUFFIX,wxsnsdythumb.wxs.qq.com, reject
 #广州地铁乘车码 #多个广告 感谢CtrlMusic🐓分享
 host, apis.alenable.com, reject
@@ -328,7 +328,7 @@ host-keyword,ttcdn-tos.kkimg.cc, direct
 ^https:\/\/mapi\.mafengwo\.cn\/ad\/get_launch_ad_list\/v url reject-200
 
 # > 高德地图更新弹窗
-#^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/app\/startup\/init\? url reject-dict
+^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/app\/startup\/init\? url reject-dict
 
 #> 航旅纵横  主机名discardrp.umetrip.com
 ^https?:\/\/discardrp\.umetrip\.com\/gateway\/api\/umetrip\/native url reject-200
@@ -802,7 +802,7 @@ host-keyword,ttcdn-tos.kkimg.cc, direct
 ^https:\/\/learnywhere\.cn\/api\/activity\/23\/423dsj\/inapp\/bb\/promote url reject-dict
 
 #和风天气 去广告 感谢@可莉分享 主机名hfapp-service.qweather.net
-#^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? url reject-dict
+^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? url reject-dict
 
 # > 合利宝展业通 #主机名promote-trx.helipay.com
 ^https?:\/\/promote-trx\.helipay\.com\/promote-business-client\/pos\/appAdvertisement\/appAdvertisementList url reject-200
@@ -860,7 +860,7 @@ https?:\/\/api\.taptapdada\.com\/startup\-logo\/v1\/combo\? url reject-dict
 
 
 #qx百度输入法净化
-^https?:\/\/mime\.baidu\.com\/(imrobot\/v1\/pub\/relation\/get_robot_list|v5\/custom_page\/(layout|getdata)) url script-response-body https://raw.githubusercontent.com/Keywos/rule/main/JS/bdsrf.js
+#^https?:\/\/mime\.baidu\.com\/(imrobot\/v1\/pub\/relation\/get_robot_list|v5\/custom_page\/(layout|getdata)) url script-response-body https://raw.githubusercontent.com/Keywos/rule/main/JS/bdsrf.js
 # 百度输入法开屏
 ^https?:\/\/mime\.baidu\.com\/v5\/start_screen_ads/list url reject-dict
 # 应用内灵感语录 输入页面推荐里语录
@@ -884,7 +884,7 @@ https?:\/\/api\.taptapdada\.com\/startup\-logo\/v1\/combo\? url reject-dict
 ^http:\/\/cds\.wifi188\.com\/feeds\.sec url reject-dict
 
 # > 中国天气网小程序 #横幅广告 #主机名e.weather.com.cn
-#^https:\/\/e\.weather\.com\.cn\/weChat\/typhoonNull\.json url reject-dict
+^https:\/\/e\.weather\.com\.cn\/weChat\/typhoonNull\.json url reject-dict
 
 ##中国移动江苏APP 开屏广告 wap.js.10086.cn
 ^https:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v1\/market_content\.page\.queryHasIt url reject-dict
@@ -1033,7 +1033,7 @@ https:\/\/edu\.seewo\.com\/app\/api\/v1\/startPage\/latest   url reject-dict
 ^https:\/\/shcss\.suning\.com\/shcss-web\/api\/appImage\/queryAppImage\.do url reject-200
 
 #2345天气王 #底下百家号广告  #主机名tianqi.2345.com 感谢 🐈‍⬛👮 分享 
-#^http?:\/\/tianqi\.2345\.com\/api\/content\/getContentFeeds\.php url reject-dict
+^http?:\/\/tianqi\.2345\.com\/api\/content\/getContentFeeds\.php url reject-dict
 
 #建行生活 #我的页面悬浮广告 昨天的规则删除
 ^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\? url response-body "TAG_AD_INFO" response-body "TAG_AD_INFO0"
